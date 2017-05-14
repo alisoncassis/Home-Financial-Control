@@ -1,0 +1,60 @@
+form button{
+  margin-top: 23px;
+}
+h4{
+  padding-left: 10px;
+}
+.form-area{
+  display: none;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.navbar-collapse.collapse{
+  display: block!important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+.navbar-right{
+  float: right !important;
+}
+.navbar-nav{
+  margin: 0;
+}
+.navbar-collapse{
+  width: auto;
+  border-top: 0;
+  box-shadow: none;
+}
+.navbar-nav > li > a{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-right .dropdown-menu{
+  right: 0;
+  left: auto;
+}
+.navbar-header{
+  float: left;
+}
+@media screen and (max-width: 360px) {
+  .nav.navbar-nav.navbar-right {
+    width: 285px;
+  }
+  .dropdown-toggle{
+    margin-left: 20px;
+  }
+  .dropdown-menu{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav.navbar-nav.navbar-right {
+    width: 125px;
+  }
+  .dropdown-toggle{
+    margin: 0px;
+  }
+}

@@ -1,0 +1,31 @@
+<template name="formExpenses">
+	<button type="button" name="button" class="btn btn-info col-xs-12 mb-10 new-expense">Nova despesa</button>
+	<div class="row form-area">
+    <h4>Cadastrar uma Despesa</h4>
+    <form id="expenses_form">
+	    <div class="col-xs-12 col-sm-8">
+				<div class="form-group">
+					<label for="name">Nome</label>
+					<input type="text" id="name" name="name" class="form-control"	placeholder="Qual o nome?">
+				</div>
+      </div>
+	    <div class="col-xs-12 col-sm-4">
+				<div class="form-group">
+					<label for="value">Valor</label>
+					<input type="text" id="value" name="value" class="form-control"	placeholder="Qual o valor?" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+				</div>
+      </div>
+	    <div class="col-xs-12 col-sm-8">
+				<div class="form-group">
+					<label for="observation">Observações</label>
+					<textarea id="observation" name="observation" class="form-control"	placeholder="Tem alguma observação?"></textarea>
+				</div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+				<div class="form-group">
+					<button class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+				</div>
+	    </div>
+    </form>
+	</div>
+</template>

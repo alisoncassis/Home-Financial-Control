@@ -1,0 +1,37 @@
+<template name="listExpenses">
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="panel panel-default">
+			  <div class="panel-heading">Despesas</div>
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<thead class="thead-default">
+							<tr>
+								<th>Cadastro</th>
+								<th>Usuário</th>
+								<th>Nome</th>
+								<th>Valor (R$)</th>
+								<th>Observações</th>
+								<th>Excluir</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each despesas}}
+							<tr>
+								<td>{{formataData}}</td>
+								<td>{{username}}</td>
+								<td>{{name}}</td>
+								<td>{{value}}</td>
+								<td>{{observation}}</td>
+								<td>{{{remove}}}</td>
+						</tr>
+						{{/each}}
+					</tbody>
+				</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</template>

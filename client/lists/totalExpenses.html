@@ -1,0 +1,29 @@
+<template name="totalExpenses">
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="panel panel-default">
+			  <div class="panel-heading">Total de despesas</div>
+				<div class="table-responsive">
+					<table class="table">
+						<thead class="thead-default">
+							<tr>
+								<th>Nome</th>
+								<th>Valor Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each usuarios}}
+							<tr>
+								<td>{{username}}</td>
+								<td>R$ {{calculaTotal}}</td>
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</template>

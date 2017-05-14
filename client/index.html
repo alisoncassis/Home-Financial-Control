@@ -1,0 +1,41 @@
+<head>
+	<link rel="stylesheet" src="./stylesheets/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header class="container">
+
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<h4 class="">
+					Controle de despesas
+				</h4>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					{{> loginButtons}}
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+
+	{{#if currentUser}}
+		{{> totalExpenses}}
+
+		{{> formExpenses}}
+
+		{{> listExpenses}}
+
+	{{else}}
+
+		Você precisa se logar primeiro!
+
+	{{/if}}
+
+	</main>
+
+</body>
